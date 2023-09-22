@@ -11,6 +11,24 @@
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Abril Fatface", "Helvetica", "sans-serif";
 
+a {
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li {
+  text-decoration: none !important;
+}
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

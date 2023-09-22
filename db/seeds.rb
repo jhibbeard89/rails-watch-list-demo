@@ -13,3 +13,13 @@ Movie.create(title: 'Titanic',
 Movie.create(title: "Ocean's Eight",
              overview: 'Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.', poster_url: 'https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg', rating: 7.0)
 puts 'movies created'
+
+puts 'Cleaning lists'
+List.destroy_all
+
+puts 'Creating Lists'
+categories = %w[Horror Thriller Action Comedy Romantic Documentary]
+categories.each do |category|
+  List.create(name: category)
+end
+puts 'Lists created'

@@ -3,23 +3,9 @@
 </div>
 
 <div class="container py-3 container--grid">
-  <div class="card flex-text--vh--center">
-    <h3>Horror</h3>
-  </div>
-
-  <div class="card flex-text--vh--center">
-    <h3>Horror</h3>
-  </div>
-
-  <div class="card flex-text--vh--center">
-    <h3>Horror</h3>
-  </div>
-
-  <div class="card flex-text--vh--center">
-    <h3>Horror</h3>
-  </div>
-
-  <div class="card flex-text--vh--center">
-    <h3>Horror</h3>
-  </div>
+  <% @lists.each do |list| %>
+    <div class="card flex-text--vh--center">
+      <h3><%= list.name %></h3>
+    </div>
+  <% end %>
 </div>

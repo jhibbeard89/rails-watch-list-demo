@@ -1,0 +1,11 @@
+.flex-text--vh--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container--grid {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
